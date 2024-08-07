@@ -1,4 +1,3 @@
-import process from 'node:process'
 import * as dotenv from 'dotenv'
 import { waitForEnter } from './utils'
 import {
