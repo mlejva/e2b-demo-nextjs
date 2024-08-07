@@ -16,7 +16,6 @@ COPY compile_page.sh /home/user/compile_page.sh
 WORKDIR /home/user/nextjs-app
 
 RUN npx create-next-app@latest . --ts --tailwind --no-eslint --import-alias "@/*" --use-npm --app --no-src-dir
-# RUN npm i -g vercel
 # Here you can install NPM dependencies to the Nextjs app
 RUN npm install recharts
 
