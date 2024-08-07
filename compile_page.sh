@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script runs during building the sandbox templates
+# This script runs during building the sandbox template
 # and makes sure the Next.js app is (1) running and (2) the `/` page is compiled
 
 function ping_server() {

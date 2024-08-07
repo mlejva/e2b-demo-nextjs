@@ -17,7 +17,7 @@ console.log('✴️ Press Enter to update the code of Next.js app...')
 await waitForEnter()
 
 await updateNextjsApp(sandbox, aiGeneratedCode)
-console.log(`  ✔︎ Nextjs app updated: https://${host}i\n`)
+console.log(`  ✔︎ Nextjs app updated: https://${host}\n`)
 
 console.log('✴️ Press Enter to kill the sandbox and end demo...')
 await waitForEnter()
