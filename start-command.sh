@@ -17,5 +17,9 @@ function ping_server() {
 	done
 }
 
+ # We need to do this to start the jupyter server
+ # so we can then call `sandbox.notebook.execCell()`
+/root/.jupyter/start-up.sh &
+
 ping_server &
 cd /home/user && npx next

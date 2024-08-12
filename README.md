@@ -12,7 +12,7 @@ npm install
 ```
 ## 3. Start the demo
 ```
-npm run starts
+npm run start
 ```
 
 ## Customizing the sandbox

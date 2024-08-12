@@ -1,5 +1,7 @@
 # You can use most Debian-based base images
-FROM ubuntu:22.04
+FROM e2bdev/code-interpreter:latest
+
+
 
 # Install essential tools and prerequisites, including curl to retrieve the Node.js setup script, and nano
 RUN apt-get update && apt-get install -y curl nano \
@@ -10,7 +12,8 @@ RUN apt-get update && apt-get install -y curl nano \
 RUN curl -fsSL https://deb.nodesource.com/setup_21.x | bash - && \
     apt-get install -y nodejs
 
-COPY compile_page.sh /home/user/compile_page.sh
+# COPY compile_page.sh /home/user/compile_page.sh
+COPY start-command.sh /home/user/start-command.sh
 
 # Install dependencies and customize sandbox
 WORKDIR /home/user/nextjs-app

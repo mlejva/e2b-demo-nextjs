@@ -11,7 +11,7 @@
 
 memory_mb = 4_096
 cpu_count = 4
-start_cmd = "/home/user/compile_page.sh"
+start_cmd = "/home/user/start-command.sh"
 dockerfile = "e2b.Dockerfile"
 template_name = "vercel-demo"
 template_id = "armihoe0e2yeloofznmb"
